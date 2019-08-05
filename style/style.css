@@ -193,12 +193,21 @@ a:hover {
   outline: none;
 }
 
+.header-section .container .header-section-menuIcon {
+  display: none;
+}
+
+.header-section .container .header-section-menu-two {
+  display: none;
+}
+
 .main-section {
   padding-top: 14rem;
 }
 
 .main-section .main-section-server .main-section-server__title {
   margin-bottom: 5rem;
+  font-size: 3rem;
 }
 
 .main-section .main-section-server .main-section-server-btn {
@@ -313,5 +322,86 @@ a:hover {
 
 .footer-section .footer-section-btns .footer-section-btns__btn:focus {
   outline: none;
+}
+
+/*Adaptive*/
+@media screen and (max-width: 1199px) {
+  .header-section .container .header-section-menu ul .header-section-menu__item {
+    margin: auto 1rem;
+    font-size: 1.6rem;
+  }
+  .main-section-render img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+  }
+  .main-section .main-section-server .main-section-server__title {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-section-render .main-section-render-bg {
+    display: none;
+  }
+  .main-section-render img {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-section .container .header-section-logo {
+    display: inline-block;
+  }
+  .header-section .container .header-section-menuIcon {
+    display: inline-block;
+    font-size: 4rem;
+  }
+  .header-section .container .header-section-button {
+    display: inline-block;
+    font-size: 2.4rem;
+  }
+  .header-section .container .header-section-menu {
+    display: none;
+  }
+  .header-section .container .header-section-menu-two .header-section-menu-two__item {
+    display: block;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    font-size: 2.4rem;
+    border: 0.1rem solid lightgray;
+  }
+  .header-section .container .header-section-menu-two .header-section-menu-two__item a {
+    margin-right: 1rem;
+  }
+  .main-section {
+    padding-top: 8rem;
+  }
+  .main-section .container .main-section-server {
+    text-align: center;
+  }
+  .main-section .container .main-section-server .main-section-server-btn {
+    margin: auto;
+  }
+  .main-section .container .main-section-server .main-section-server-btn .main-section-server-btn-join__title {
+    font-size: 2.2rem;
+  }
+  .main-section .container .main-section-render {
+    margin: 3rem auto 0rem auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-section .footer-section-btns__btn {
+    margin-top: 2rem;
+    height: 7rem;
+  }
+  .main-section-render {
+    display: none;
+  }
+  .news-section {
+    padding-top: 10rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
