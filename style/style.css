@@ -310,4 +310,8 @@ a:hover {
 .footer-section .footer-section-btns .footer-section-btns__btn img {
   padding: 0.75rem 0;
 }
+
+.footer-section .footer-section-btns .footer-section-btns__btn:focus {
+  outline: none;
+}
 /*# sourceMappingURL=style.css.map */
