@@ -1,0 +1,154 @@
+/*Styles of background*/
+@import 'bg-style';
+
+/*Colors*/
+$white: #fff;
+$black: #000;
+$gray: lightgray;
+$blue: #66A6FF;
+$cyan: #89F7FE;
+
+html {
+    font-size: 10px;
+}
+a {
+    color: #000;
+    cursor: default;
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.header-section {
+    .container {
+        margin-top: 2rem;
+        .header-section-logo {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header-section-menu {
+            ul {
+                margin: auto 0;
+                .header-section-menu__item {
+                    display: inline-block;
+                    margin: auto 2.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .header-section-button {
+            height: 5.4rem;
+            background: linear-gradient(90deg, $cyan, $blue);
+            box-shadow: 0 0 5rem rgba($cyan, $alpha: 0.3);
+            border: none;
+            font-size: 1.6rem;
+            color: $white;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.main-section {
+    padding-top: 14rem;
+    .main-section-server {
+        .main-section-server__title{
+            margin-bottom: 5rem; 
+        }
+        .main-section-server-btn {
+            height: 5.7rem;
+            width: 22.3rem;
+            background-color: $black;
+            position: relative;
+            margin-bottom: 1.5rem;
+            .main-section-server-btn-bg {
+                display: flex;
+                .main-section-server-btn-bg__icon {
+                    margin-left: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%)
+                }
+                .main-section-server-btn-bg__title {
+                    color: $white;
+                    font-size: 1.6rem;
+                    margin-left: 5rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%)
+                }
+            }
+            .main-section-server-btn-join {
+                height: 4rem;
+                width: 20.5rem;
+                position: absolute;
+                right: -11.15rem;
+                top: 0.85rem;
+                font-size: 1.6rem;
+                background-color: $white;
+                border: none;
+                box-shadow: 0 0 3rem rgba($black, $alpha: 0.2);
+                .main-section-server-btn-join__title {
+                    margin: auto;
+                }
+                &:hover {
+                    transform: translateX(1rem); 
+                    //background: linear-gradient(90deg, $gray, $white);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .main-section-server-btn-online {
+            font-size: 1.8rem;
+            .main-section-server-btn-online__full {
+                color: $gray;
+            }
+        }
+    }
+    .main-section-render {
+        width: 51.4rem;
+        height: 56.5rem;
+        .main-section-render-bg {
+            height: 44rem;
+            width: 44rem;
+            background-image: url(../images/Intersect.png);
+            margin: auto;
+            margin-top: 6.25rem;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.news-section {
+    .news-section__title {
+        padding-bottom: 5rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+.footer-section {
+    margin: 10rem 0 8rem 0;
+    .footer-section__title {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    .footer-section-btns {
+        .footer-section-btns__btn {
+            background-color: $black;
+            border: none;
+            img {
+                padding: 0.75rem 0;
+            }
+        }
+    }
+}

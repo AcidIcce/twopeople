@@ -1,0 +1,69 @@
+.block-1 {
+    position: fixed;
+    filter: blur(5px);
+    top: 12rem;
+    left: 70rem;
+    animation-name: block_1_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.block-2 {
+    position: fixed;
+    filter: blur(5px);
+    top: 60rem;
+    left: 30rem;
+    animation-name: block_2_anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.block-3 {
+    position: fixed;
+    filter: blur(5px);
+    top: 40rem;
+    left: 120rem;
+    animation-name: block_3_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.block-4 {
+    position: fixed;
+    filter: blur(5px);
+    top: 7rem;
+    animation-name: block_4_anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes block_1_anim {
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes block_2_anim {
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes block_3_anim {
+    50% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes block_4_anim {
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
