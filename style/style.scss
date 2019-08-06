@@ -268,15 +268,9 @@ a {
         padding-top: 10rem;
     }
 }
-@media screen and (max-width: 350px) {
-    .main-section-server-btn {
-        height: 10rem;
-        .main-section-server-btn-bg {
-            
-        }
-        .main-section-server-btn-join {
-            left: 0.9rem;
-            margin-top: -4rem;
-        }
+@media screen and (max-width: 380px) {
+    .main-section-server-btn-join {
+        left: 0.9rem;
+        margin-top: -4rem;
     }
 }
