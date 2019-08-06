@@ -398,10 +398,43 @@ a:hover {
     height: 7rem;
   }
   .main-section-render {
-    display: none;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    -webkit-animation-name: render-anim;
+            animation-name: render-anim;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .main-section-render img {
+    height: 60%;
   }
   .news-section {
     padding-top: 10rem;
+  }
+  @-webkit-keyframes render-anim {
+    50% {
+      -webkit-transform: translateY(1rem);
+              transform: translateY(1rem);
+    }
+    100% {
+      -webkit-transform: translateY(0rem);
+              transform: translateY(0rem);
+    }
+  }
+  @keyframes render-anim {
+    50% {
+      -webkit-transform: translateY(1rem);
+              transform: translateY(1rem);
+    }
+    100% {
+      -webkit-transform: translateY(0rem);
+              transform: translateY(0rem);
+    }
   }
 }
 
