@@ -1,0 +1,164 @@
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #1B1B1B;
+}
+
+.logo {
+  height: 5.4rem;
+  width: 8rem;
+}
+
+.logo .ring {
+  position: absolute;
+  height: 5.4rem;
+  width: 5.4rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.3rem solid #FFCC33;
+  border-radius: 50%;
+}
+
+.logo .right-ring {
+  margin-left: 2.6rem;
+  border-color: #fff;
+}
+
+.loading-block {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #1B1B1B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: loading_anim;
+          animation-name: loading_anim;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.loading-block .logo {
+  -webkit-animation-name: logo_anim;
+          animation-name: logo_anim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes logo_anim {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo_anim {
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading_anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading_anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.header-section {
+  padding-top: 4rem;
+}
+
+.header-section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.header-section .header-section-menuicon {
+  width: 4rem;
+  height: 2.2rem;
+  display: inline-block;
+}
+
+.header-section .header-section-menuicon .header-section-menuicon__item_1 {
+  height: 0.2rem;
+  width: 100%;
+  background-color: #FFCC33;
+  margin-left: 0;
+}
+
+.header-section .header-section-menuicon .header-section-menuicon__item_2 {
+  height: 0.2rem;
+  width: 75%;
+  background-color: #FFCC33;
+  margin-left: 25%;
+  margin-top: 0.8rem;
+}
+
+.header-section .header-section-menuicon .header-section-menuicon__item_3 {
+  height: 0.2rem;
+  width: 50%;
+  background-color: #FFCC33;
+  margin-left: 50%;
+  margin-top: 0.8rem;
+}
+
+.main-section {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.main-section .main-section__title {
+  font-size: 25rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  display: inline-block;
+}
+
+.main-section .main-section__title h1 {
+  -webkit-text-stroke: 0.2rem #fff;
+  font-size: 20rem;
+  font-weight: bold;
+}
+
+.main-section .main-section__subtitle {
+  font-size: 1.8rem;
+  margin-top: 20rem;
+  font-weight: 200;
+  color: #fff;
+}
+/*# sourceMappingURL=main-style.css.map */
